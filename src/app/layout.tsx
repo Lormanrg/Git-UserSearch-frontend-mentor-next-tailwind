@@ -18,11 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={spacegrotesk.className}>
-        <div className="grid place-content-center h-screen bg-gray-500">
+        <div className="min-h-screen bg-gray-900 grid place-content-center">
+       <div className="sm:w-[500px] md:w-[600px] lg:w-[700px]">
         <Navbar />
         {children}
-        
         </div>
+        </div>
+        
       </body>
     </html>
   );
