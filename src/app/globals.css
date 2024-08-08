@@ -4,7 +4,7 @@
 
 .grid-areas{
     display: grid;
-    grid-template-columns:repeat(3,1fr) ;
+    grid-template-columns: 1fr 2fr 3fr ;
     grid-template-areas:
     "a b b"
     "a c c"
@@ -33,10 +33,17 @@
     grid-area: f;
 }
 
+@media (min-width: 640px){
+    .grid-areas{
+    grid-template-columns: 1fr 2fr 3fr 
+}
+}
+
+
 @media (min-width: 1024px) { 
     .grid-areas{
         display: grid;
-        grid-template-columns:repeat(3,1fr) ;
+        grid-template-columns:1fr 2fr 3fr  ;
         grid-template-areas:
         "a b c"
         "a b c"
